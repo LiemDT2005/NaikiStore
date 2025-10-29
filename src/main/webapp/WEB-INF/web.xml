@@ -8,11 +8,8 @@
             30
         </session-timeout>
     </session-config>
-    <welcome-file-list>
-        <welcome-file>home</welcome-file>
-    </welcome-file-list>
-    <!-- Khi run sẽ tự gọi Servlet /home -->
-    <welcome-file-list>
-        <welcome-file>home</welcome-file>
-    </welcome-file-list>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
 </web-app>
