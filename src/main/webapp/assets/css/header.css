@@ -1,0 +1,89 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 23, 2025, 1:59:08 PM
+    Author     : Dang Thanh Liem - CE190697
+*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.search-bar {
+    background-color: #e5e5ea;
+    border-radius: 30px;
+    padding: 8px 15px;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-bar i {
+    font-size: 20px;
+    color: #333;
+}
+
+.logo {
+    padding-left: 18px;
+}
+
+.icon-label {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.icon-label i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.icon-label:hover {
+    color: #4070f4;
+    cursor: pointer;
+}
+
+.nav-bottom {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.nav-bottom a {
+    margin: 0 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-bottom a:hover {
+    color: #4070f4;
+}
+
+.no-copy {
+    user-select: none;
+}
+
+.dropdown-menu a {
+    font-size: 14px;
+}
+
+#sidebarToggle {
+    border-radius: 8px;
+}

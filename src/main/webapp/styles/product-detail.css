@@ -1,0 +1,155 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/*
+ * File: product-detail.css
+ * Author: Dang Thanh Liem - CE190697
+ * Description: Styling for product detail page and popup UI
+ */
+
+/* === PRODUCT IMAGE AREA === */
+.thumbnail {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.product-image {
+    max-height: 420px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* === SIZE & COLOR SELECTION === */
+.btn-outline-dark {
+    border-radius: 8px;
+    min-width: 50px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-dark:hover,
+.btn-check:checked + .btn-outline-dark {
+    background-color: #212529;
+    color: #fff;
+}
+
+/* === POPUP OVERLAY === */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1050;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup-overlay.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+/* === POPUP BOX === */
+.popup-box {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    max-width: 400px;
+    animation: popup-fade 0.25s ease;
+}
+
+@keyframes popup-fade {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* === POPUP ICONS === */
+.popup-icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.popup-icon.success {
+    color: #4CAF50;
+}
+
+.popup-icon.error {
+    color: #f44336;
+}
+
+/* === POPUP BUTTONS === */
+.popup-actions {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.popup-box button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-weight: 500;
+    min-width: 90px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #388e3c;
+}
+
+.btn-secondary {
+    background-color: #ddd;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #ccc;
+}
+
+/* === GENERAL UTILITIES === */
+.popup-open {
+    overflow: hidden; /* Prevent scrolling when popup is open */
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .product-image {
+        max-height: 300px;
+    }
+    .popup-box {
+        padding: 20px 30px;
+    }
+}

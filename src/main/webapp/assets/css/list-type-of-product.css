@@ -1,0 +1,39 @@
+/* 
+    Created on : Jul 3, 2025, 11:03:42 AM
+    Author     : Tran Cong Thuan - CE190199
+*/
+
+body {
+    background-color: #f8f9fa;
+}
+.sidebar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.filter-section {
+    margin-bottom: 1.5rem;
+}
+.filter-section h6 {
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.card-img-top {
+    object-fit: cover;
+    height: 180px;
+}
+.sort-buttons .btn {
+    margin-right: .5rem;
+}
+.badge-new {
+    background-color: #000;
+}
+.my-link {
+    transition: all 0.3s ease; /* Tạo hiệu ứng mượt */
+}
+
+.my-link:hover {
+    transform: scale(1.05); /* To lên 5% */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Bóng đổ nhẹ */
+}

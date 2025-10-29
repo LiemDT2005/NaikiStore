@@ -1,0 +1,28 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 7, 2025, 8:36:49 PM
+    Author     : Dang Thanh Liem - CE190697
+*/
+
+.status-select option[value="waiting"] {
+    background-color: #fff3cd; /* vàng nhạt */
+    color: #856404;
+}
+
+.status-select option[value="shipping"] {
+    background-color: #cfe2ff; /* xanh dương nhạt */
+    color: #084298;
+}
+
+.status-select option[value="completed"] {
+    background-color: #d1e7dd; /* xanh lá nhạt */
+    color: #0f5132;
+}
+
+.status-select option[value="cancelled"] {
+    background-color: #f8d7da; /* đỏ nhạt */
+    color: #842029;
+}

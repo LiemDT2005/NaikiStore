@@ -1,0 +1,133 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 20, 2025, 9:43:39 AM
+    Author     : Admin
+*/
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.collapsed {
+    transform: translateX(-250px);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar a  {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+.sidebar a:hover{
+    background-color: #495057;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content.full-width {
+    margin-left: 0;
+}
+
+.toggle-btn {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1050;
+    border-radius: 5px;
+}
+
+.toggle-btn:hover {
+    background-color: #23272b;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-header {
+    border-bottom: 1px solid black;
+}
+
+.ttr-wrapper {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-items {
+    flex: 1;
+    margin-top: auto;
+}
+
+.category-edit-link {
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    background: orange;
+    cursor: pointer;
+}
+
+.category-add-link {
+    color: white;
+    text-decoration: none;
+    background: black;
+    cursor: pointer;
+}

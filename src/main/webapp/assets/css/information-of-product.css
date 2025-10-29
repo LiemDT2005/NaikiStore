@@ -1,0 +1,64 @@
+/* 
+    Created on : Jul 3, 2025, 4:49:56 AM
+    Author     : Tran Cong Thuan - CE190199
+*/
+
+.product-image {
+    max-height: 400px;
+    @import "productDetail.css";
+    object-fit: cover;
+}
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+.thumbnail:hover, .thumbnail.active {
+    opacity: 1;
+}
+.size {
+    min-width: 40px; /* hoặc width: 40px; tùy ý */
+    text-align: center; /* căn giữa chữ */
+}
+
+div.size-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.popup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.popup-box button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup-box button:hover {
+    background: #388e3c;
+}

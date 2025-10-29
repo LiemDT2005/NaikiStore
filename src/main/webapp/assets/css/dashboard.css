@@ -1,0 +1,33 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 17, 2025, 4:03:22 PM
+    Author     : Dang Thanh Liem - CE190697
+*/
+
+.header-icon {
+    min-width: 60px;
+}
+
+.nav-bottom a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.nav-bottom a:hover {
+    color: #007bff;
+}
+
+.search-bar {
+    background: #e7e7ed;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu a {
+    font-size: 14px;
+}
